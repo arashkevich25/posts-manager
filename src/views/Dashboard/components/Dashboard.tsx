@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { FullPageLoader } from '../../../components';
 import { IPost } from '../../../interfaces/Post';
-import { Container } from '../styled/Container';
+import { Container } from '../styled';
 import { NewPostButton } from './NewPostButton';
 import { PostCard } from './PostCard';
 

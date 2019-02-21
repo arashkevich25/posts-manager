@@ -1,6 +1,6 @@
 import Button from '@material-ui/core/Button';
 import * as React from 'react';
-import { ApproveRemoveBox, ButtonsPanel, PostFormContainer } from '../styled/PostFormStyled';
+import { ApproveRemoveBox, ButtonsPanel, PostFormContainer } from '../styled';
 
 interface IRemoveApproveForm {
     id: number;

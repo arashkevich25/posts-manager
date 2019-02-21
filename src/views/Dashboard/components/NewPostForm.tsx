@@ -2,7 +2,7 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import * as React from 'react';
 import { IPost } from '../../../interfaces/Post';
-import { PostFormBox, PostFormContainer } from '../styled/PostFormStyled';
+import { PostFormBox, PostFormContainer } from '../styled';
 
 interface INewPostFormState {
     userId: number;
@@ -89,10 +89,10 @@ export class NewPostForm extends React.PureComponent<INewPostFormProps, INewPost
     private createUpdatePost = (): void => {
         const { updateCreatePostHandle } = this.props;
         const { userId, id, title, body } = this.state;
-        updateCreatePostHandle({userId, id, title, body});
+        updateCreatePostHandle({ userId, id, title, body });
     };
 
     private handleChange = (e: any): void => {
-        this.setState({[e.target.id]: e.target.value});
+        this.setState({ [e.target.id]: e.target.value });
     };
 }

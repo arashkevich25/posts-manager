@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { addNewPost } from '../../../actions/app';
-import { Modal } from '../../../components/Modal/Modal';
+import { Modal } from '../../../components';
 import { IPost } from '../../../interfaces/Post';
-import { AddPostLabel, NewPostButtonStyled, PlusStyled } from '../styled/NewPostButtonStyled';
+import { AddPostLabel, NewPostButtonStyled, PlusStyled } from '../styled';
 import { NewPostForm } from './NewPostForm';
 
 interface IComponentProps {

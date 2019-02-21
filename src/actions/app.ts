@@ -45,7 +45,7 @@ export function addNewPost(newPost: IPost): ThunkAction<void, IAppState, null, A
             const response = await fetch(API, {
                 body: JSON.stringify(newPost),
                 headers: {
-                    "Content-type": "application/json; charset=UTF-8"
+                    "Content-type": "application/json; charset=UTF-8",
                 },
                 method: 'POST',
             });
@@ -81,7 +81,7 @@ export function updatePost(newPost: IPost): ThunkAction<void, IAppState, null, A
             const response = await fetch(`${API}/${newPost.id}`, {
                 body: JSON.stringify(newPost),
                 headers: {
-                    "Content-type": "application/json; charset=UTF-8"
+                    "Content-type": "application/json; charset=UTF-8",
                 },
                 method: 'PUT',
             });
@@ -110,7 +110,7 @@ function updatePostFailure(error: Error) {
 export function deletePost(postId: number): ThunkAction<void, IAppState, null, Action> {
     return async dispatch => {
         dispatch({
-            type: actionTypes.DELETE_POST
+            type: actionTypes.DELETE_POST,
         });
 
         try {

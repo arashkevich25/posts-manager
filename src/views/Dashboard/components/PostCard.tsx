@@ -2,11 +2,9 @@ import Button from '@material-ui/core/Button';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { deletePost, updatePost } from '../../../actions/app';
-import { Modal } from '../../../components/Modal/Modal';
+import { Modal } from '../../../components';
 import { IPost } from '../../../interfaces/Post';
-import { CardActionsStyled } from '../styled/CardActionsStyled';
-import { CardContentStyled } from '../styled/CardContentStyled';
-import { CardStyled } from '../styled/CardStyled';
+import { CardActionsStyled, CardContentStyled, CardStyled } from '../styled';
 import { NewPostForm } from './NewPostForm';
 import { RemoveApproveForm } from './RemoveApproveForm';
 
